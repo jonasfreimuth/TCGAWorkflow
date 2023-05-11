@@ -527,7 +527,6 @@ clinical <- plyr::rbind.fill(gbm_clin,lgg_clin)
 datatable(clinical[1:10,], options = list(scrollX = TRUE, keys = TRUE), rownames = FALSE)
 ```
 
-
 ```{r results = 'hide', echo=TRUE, message=FALSE, warning=FALSE}
 # Fetch clinical data directly from the clinical XML files.
 # if barcode is not set, it will consider all samples.
