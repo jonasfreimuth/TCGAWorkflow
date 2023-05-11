@@ -826,7 +826,6 @@ plot <- mafSurvival(
 )
 ```
 
-
 ## Transcriptomic analysis
 
 ### Pre-Processing Data
@@ -841,8 +840,6 @@ resulted in 516 LGG samples and 156 GBM samples, then prepared it in two
 separate rse objects (*RangedSummarizedExperiment*) saving them as an R
 object with a filename including both the cancer name and the
 name of the platform used for gene expression data.
-
-
 
 ```{R, eval=FALSE, include=TRUE}
 query <- GDCquery(
