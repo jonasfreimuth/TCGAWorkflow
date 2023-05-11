@@ -244,6 +244,7 @@ presents several [Bioconductor](http://www.bioconductor.org/) packages
 to work with genomic and epigenomics data.
 
 # Methods
+
 ## Access to the data
 
 TCGA data is accessible via the NCI Genomic Data Commons (GDC) [data
