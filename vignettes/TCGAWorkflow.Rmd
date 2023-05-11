@@ -522,6 +522,7 @@ lgg_clin <- GDCquery_clinic(project = "TCGA-LGG", type = "Clinical")
 # we will will plyr rbind.fill, to have all columns from both files
 clinical <- plyr::rbind.fill(gbm_clin,lgg_clin)
 ```
+
 ```{r  echo = TRUE, message = FALSE, warning = FALSE}
 datatable(clinical[1:10,], options = list(scrollX = TRUE, keys = TRUE), rownames = FALSE)
 ```
