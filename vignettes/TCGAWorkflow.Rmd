@@ -735,7 +735,6 @@ GDCdownload(query.gbm.nocnv, files.per.chunk = 100)
 gbm.nocnv <- GDCprepare(query.gbm.nocnv, save = TRUE, save.filename = "GBMnocnvhg19.rda")
 ```
 
-
 ### Visualizing multiple genomic alteration events
 
 In order to visualize multiple genomic alteration events, we recommend
