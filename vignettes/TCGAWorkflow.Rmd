@@ -1113,8 +1113,7 @@ this knowledge is far from complete and in most cases only contains a
 small subset of the real interactome. The quality assessment of the
 inferred networks can be carried out by comparing the inferred
 interactions to those that have been validated. This comparison results
-in a confusion matrix as presented in
-Table below.
+in a confusion matrix as presented in the Table below.
 
 validated   not validated/non-existing
 -------------- ----------- ----------------------------
