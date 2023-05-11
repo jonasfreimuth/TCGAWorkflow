@@ -1096,7 +1096,6 @@ the LGG samples compared to GBM.
 
 ### Inference of gene regulatory networks
 
-
 Starting with the set of differentially expressed genes, we infer gene
 regulatory networks using the following state-of-the-art inference
 algorithms: ARACNE [@margolin2006aracne], CLR [@faith2007large], MRNET
