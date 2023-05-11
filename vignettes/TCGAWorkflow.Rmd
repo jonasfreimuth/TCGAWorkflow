@@ -1460,11 +1460,9 @@ draw(heatmap, annotation_legend_side =  "bottom")
 dev.off()
 ```
 
-
 ![](heatmap.png)
 
-
-### Motif analysis 
+### Motif analysis
 
 Motif discovery is the attempt to extract small sequence signals hidden
 within largely non-functional intergenic sequences. These small sequence
