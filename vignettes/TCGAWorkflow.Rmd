@@ -361,7 +361,6 @@ variation from harmonized data portal. Other examples, that access the
 harmonized data can be found in the [TCGAbiolinks
 vignette](https://www.bioconductor.org/packages/3.3/bioc/vignettes/TCGAbiolinks/inst/doc/tcgaBiolinks.html).
 
-
 ```{R, eval=FALSE, include=TRUE}
 library(TCGAbiolinks)
 # Obs: The data in the legacy database has been aligned to hg19
