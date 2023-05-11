@@ -494,7 +494,7 @@ treatment, treatment id, therapeutic agents, treatment intent type),
 demographic (gender, race, ethnicity) and exposures (cigarettes per day,
 weight, height, alcohol history) information. This indexed clinical data
 can be obtained using the function *GDCquery\_clinical* which can be
-used as described in listing below. This function has two
+used as described in the listing below. This function has two
 arguments *project* ("TCGA-GBM","TARGET-AML",etc) and *type* ("Clinical"
 or "Biospecimen"). The second method will download the XML files with
 all clinical data for the patient and retrieve the desired information
@@ -638,7 +638,7 @@ By default,
 [RTCGAToolbox](http://bioconductor.org/packages/RTCGAToolbox/) allows
 users to download up to 500 MB worth of data. To increase the size of
 the download, users are encouraged to use *fileSizeLimit* argument. An
-example is found in listing below. The *getData* function
+example is found in the listing below. The *getData* function
 allows users to access the downloaded data.
 
 ```{R, eval=FALSE, include=TRUE}
@@ -1602,7 +1602,7 @@ regions with the regions identified in the starburst plot. The
 narrowPeak files are the ones selected for this step. For a complete
 pipeline with Chip-seq data, Bioconductor provides excellent tutorials
 to work with ChIP-seq and we encourage our readers to review the
-following article [@ChIP-seqbioc]. The first step is shown in listing
+following article [@ChIP-seqbioc]. The first step is shown in the listing
 below is to download the chip-seq data. The function
 *query* received as argument the annotationHub database (ah) and a list
 of keywords to be used for searching the data, *EpigenomeRoadmap* is
