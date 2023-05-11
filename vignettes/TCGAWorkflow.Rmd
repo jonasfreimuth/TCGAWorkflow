@@ -792,6 +792,7 @@ maf <- read.maf(
 ```
 
 We can plot a MAF summary.
+
 ```{r echo=TRUE, message=FALSE, warning=FALSE,fig.width=10}
 plotmafSummary(
   maf = maf,
@@ -801,7 +802,8 @@ plotmafSummary(
 )
 ```
 
-We can draw oncoplot with the top 20 most mutated genes and add metadata information such as molecular subtypes information.
+We can draw oncoplot with the top 20 most mutated genes and add metadata
+information such as molecular subtypes information.
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE,fig.height=10,fig.width=15,eval=FALSE}
 oncoplot(
