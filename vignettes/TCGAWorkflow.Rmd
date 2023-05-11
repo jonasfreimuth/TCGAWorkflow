@@ -452,10 +452,10 @@ data <- GDCprepare(query)
 If a
 [SummarizedExperiment object](http://www.nature.com/nmeth/journal/v12/n2/fig_tab/nmeth.3252_F2.html)
 was chosen, the data can be accessed with three different accessors: *assay* for
-the data information, *rowRanges* to gets the range of values in each row and
+the data information, *rowRanges* to get the range of values in each row and
 *colData* to get the sample information (patient, batch, sample type, etc)
-[@huber2015orchestrating; @SummarizedExperiment]. An example is shown in listing
-below.
+[@huber2015orchestrating; @SummarizedExperiment]. An example is shown in the
+listing below.
 
 ```{R, eval=TRUE, include=TRUE}
 library(SummarizedExperiment)
