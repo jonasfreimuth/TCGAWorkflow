@@ -548,6 +548,7 @@ datatable(clinical, options = list(scrollX = TRUE, keys = TRUE), rownames = FALS
 ```{r results = 'hide', echo=TRUE, message=FALSE, warning=FALSE}
 clinical.drug <- GDCprepare_clinic(query, clinical.info = "drug")
 ```
+
 ```{r  echo = TRUE, message = FALSE, warning = FALSE}
 datatable(clinical.drug, options = list(scrollX = TRUE, keys = TRUE), rownames = FALSE)
 ```
