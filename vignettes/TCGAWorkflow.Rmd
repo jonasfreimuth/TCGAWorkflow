@@ -620,14 +620,14 @@ The Bioconductor package
 through the function *getFirehoseData*. The following arguments allow
 users to select the version and tumor type of interest:
 
--   dataset - Tumor to download. A complete list of possibilities can be
-view with *getFirehoseDatasets* function.
+- dataset - Tumor to download. A complete list of possibilities can be view with
+  *getFirehoseDatasets* function.
 
--   runDate - Stddata run dates. Dates can be viewed with
-*getFirehoseRunningDates* function.
+- runDate - Stddata run dates. Dates can be viewed with
+  *getFirehoseRunningDates* function.
 
--   gistic2\_Date - Analyze run dates. Dates can viewed with
-*getFirehoseAnalyzeDates* function.
+- gistic2\_Date - Analyze run dates. Dates can viewed with
+  *getFirehoseAnalyzeDates* function.
 
 These arguments can be used to select the data type to download:
 RNAseq\_Gene, Clinic, miRNASeq\_Gene, ccRNAseq2\_Gene\_Norm, CNA\_SNP,
