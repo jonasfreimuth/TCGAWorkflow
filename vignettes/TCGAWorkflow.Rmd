@@ -222,7 +222,7 @@ primary ex vivo tissues [@Fingerman; @Bernstein].
 Briefly, these three consortia provide large-scale epigenomic data onto
 a variety of microarrays and next-generation sequencing (NGS) platforms.
 Each consortium encompasses specific types of biological information on
-a specific type of tissue or cell and when analyzed together, it provides
+a specific type of tissue or cell and when analyzed together, they provide
 an invaluable opportunity for research laboratories to better understand
 the developmental progression of normal cells to cancer state at the
 molecular level and importantly, correlate these phenotypes with tissue
