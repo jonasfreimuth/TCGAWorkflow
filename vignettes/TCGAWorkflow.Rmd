@@ -612,7 +612,6 @@ gbm.subtypes <- TCGAquery_subtype(tumor = "gbm")
 datatable(gbm.subtypes[1:10,], options = list(scrollX = TRUE, keys = TRUE), rownames = FALSE)
 ```
 
-
 ### Downloading data from Broad TCGA GDAC
 
 The Bioconductor package
