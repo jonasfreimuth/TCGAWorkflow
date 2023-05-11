@@ -1488,6 +1488,7 @@ Using Bioconductor package
 [motifStack](http://bioconductor.org/packages/motifStack/)
 [@ou2013motifstack] it is possible to generate a graphic representation
 of multiple motifs with different similarity scores.
+
 ```{r results='asis', echo=TRUE, message=FALSE,warning=FALSE}
 library(rGADEM)
 library(BSgenome.Hsapiens.UCSC.hg19)
