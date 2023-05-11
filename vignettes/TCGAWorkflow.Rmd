@@ -262,31 +262,28 @@ copy of data that was previously stored in
 Portal hosted by the TCGA Data Coordinating Center (DCC), in which uses
 as references GRCh37 (hg19) and GRCh36 (hg18).
 
-The previously stored data in CGHub, TCGA Data Portal and Broad
-Institute’s GDAC Firehose, were provided as different levels or tiers
-that were defined in terms of a specific combination of both processing
-level (raw, normalized, integrated) and access level (controlled or open
-access). Level 1 indicated raw and controlled data, level 2 indicated
-processed and controlled data, level 3 indicated Segmented or
-Interpreted Data and open access and level 4 indicated region of
-interest and open access data. While the TCGA data portal provided level
-1 to 3 data, Firehose only provides level 3 and 4. An explanation of the
+The previously stored data in CGHub, TCGA Data Portal and Broad Institute’s GDAC
+Firehose, were provided as different levels or tiers that were defined in terms
+of a specific combination of both processing level (raw, normalized, integrated)
+and access level (controlled or open access). Level 1 indicated raw and
+controlled data, level 2 indicated processed and controlled data, level 3
+indicated Segmented or Interpreted Data and open access and level 4 indicated
+region of interest and open access data. While the TCGA data portal provided
+level 1 to 3 data, Firehose only provides level 3 and 4. An explanation of the
 different levels can be found at [TCGA
-Wiki](https://wiki.nci.nih.gov/display/TCGA/Data+level). However, the
-GDC data portal no longer uses this based classification model in
-levels. Instead, a new data model was created, its documentation can be
-found in [GDC
+Wiki](https://wiki.nci.nih.gov/display/TCGA/Data+level). However, the GDC data
+portal no longer uses this level based classification model. Instead, a new data
+model was created, its documentation can be found in [GDC
 documentation](https://gdc.nci.nih.gov/developers/gdc-data-model/gdc-data-model-components).
-In this new model, data can be open or controlled access. While the GDC
-open access data does not require authentication or authorization to
-access it and generally includes high-level genomic data that is not
-individually identifiable, as well as most clinical and all biospecimen
-data elements, the GDC controlled access data requires dbGaP
-authorization and eRA Commons authentication and generally includes
-individually identifiable data such as low-level genomic sequencing
-data, germline variants, SNP6 genotype data, and certain clinical data
-elements. The process to obtain access to controlled data is found in
-[GDC web
+In this new model, data can be open or controlled access. While the GDC open
+access data does not require authentication or authorization to access it and
+generally includes high-level genomic data that is not individually
+identifiable, as well as most clinical and all biospecimen data elements, the
+GDC controlled access data requires dbGaP authorization and eRA Commons
+authentication and generally includes individually identifiable data such as
+low-level genomic sequencing data, germline variants, SNP6 genotype data, and
+certain clinical data elements. The process to obtain access to controlled data
+is found in [GDC web
 site](https://gdc.nci.nih.gov/access-data/obtaining-access-controlled-data).
 
 Finally, the data provided by [GDC data
@@ -303,8 +300,8 @@ The next steps describe how one could use
 download clinical, genomics, transcriptomics, epigenomics data, as well
 as subtype information and GISTIC results (i.e., identified genes
 targeted by somatic copy-number alterations (SCNAs) that drive cancer
-growth). All the data used in this workflow has as reference the Genome
-Reference Consortium human genome (build 37 - hg19).
+growth). All the data used in this workflow uses the Genome
+Reference Consortium human genome (build 37 - hg19) as reference .
 
 ### Downloading data from TCGA data portal
 
