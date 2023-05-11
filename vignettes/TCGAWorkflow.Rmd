@@ -1137,7 +1137,6 @@ mechanism or (more likely) has not yet been attempted.\
 In the following, we ran the nce on i) the 2,901 differentially
 expressed genes identified in Section "Transcriptomic analysis".
 
-
 **Retrieving known interactions**
 
 We obtained a set of known interactions from the [BioGrid
@@ -1208,7 +1207,6 @@ legend("bottomright", legend=paste(c("aracne","mrnet","clr","c3net"), signif(res
 # dev.copy2pdf(width=8,height=8,device = dev1, file = paste0("roc_biogrid_",cancertype,".pdf"))
 ```
 
-
 ![ROC with corresponding AUC for inferred GBM networks compared to
 BioGrid interactions\label{fig::roc_GBM}](roc_biogrid_GBM.png)
 
@@ -1216,7 +1214,6 @@ In Figure above, the obtained ROC curve and the
 corresponding area under the curve (AUC) are presented. It can be observed
 that CLR and MRNET perform best when comparing the inferred network with
 known interactions from the BioGrid database.
-
 
 ## Epigenetic analysis
 
