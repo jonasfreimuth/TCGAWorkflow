@@ -888,13 +888,12 @@ lgg.exp <- GDCprepare(
 )
 ```
 
-To pre-process the data, first, we searched for possible outliers using
-the *TCGAanalyze\_Preprocessing* function, which performs an Array Array
-Intensity correlation AAIC.
-In this way, we defined a square symmetric matrix of
-pearson correlation among all samples in each cancer type (LGG or GBM).
-This matrix found 0 samples with low correlation (cor.cut = 0.6) that
-can be identified as possible outliers.
+To pre-process the data, we first searched for possible outliers using the
+*TCGAanalyze\_Preprocessing* function, which performs an Array Array Intensity
+correlation (AAIC). This yields a square, symmetric matrix of pearson
+correlation coefficients bewteen all samples in each cancer type (LGG or GBM).
+This matrix identified 0 samples with low correlation (cor.cut = 0.6) which
+could be identified as outliers.
 
 Second, using the *TCGAanalyze\_Normalization* function, which
 encompasses the functions of the
