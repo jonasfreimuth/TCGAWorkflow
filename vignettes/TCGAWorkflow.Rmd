@@ -457,7 +457,6 @@ the data information, *rowRanges* to gets the range of values in each row and
 [@huber2015orchestrating; @SummarizedExperiment]. An example is shown in listing
 below.
 
-
 ```{R, eval=TRUE, include=TRUE}
 library(SummarizedExperiment)
 
