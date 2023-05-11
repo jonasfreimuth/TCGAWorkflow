@@ -960,7 +960,6 @@ dataDEGs <- TCGAanalyze_DEA(
 nrow(dataDEGs)
 ```
 
-
 ### EA: enrichment analysis
 In order to understand the underlying biological process of DEGs we
 performed an enrichment analysis using *TCGAanalyze\_EA\_complete*
@@ -1029,7 +1028,6 @@ significant canonical pathways identified in the DEGs are ranked
 according to their p-value corrected FDR (-Log10) (colored bars) and the
 ratio of list genes found in each pathway over the total number of genes
 in that pathway (ratio, red line).
-
 
 ### PEA: Pathways enrichment analysis
 
