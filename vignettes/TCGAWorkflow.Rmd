@@ -702,7 +702,7 @@ data are the aberrant regions of the genome resulting from CNV
 segmentation, and they are available for all copy number technologies.
 
 In this section, we will show how to analyze CNV level 3 data from TCGA
-to identify recurrent alterations in the cancer genome. We analyzed GBM 
+to identify recurrent alterations in the cancer genome. We analyzed GBM
 segmented CNV from SNP array (Affymetrix Genome-Wide Human SNP Array
 6.0).
 
