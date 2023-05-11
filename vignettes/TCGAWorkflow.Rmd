@@ -688,7 +688,6 @@ gistic.thresholedbygene %>% head() %>% gt::gt()
 
 ## Genomic analysis
 
-
 Copy number variations (CNVs) have a critical role in cancer development
 and progression. A chromosomal segment can be deleted or amplified as a
 result of genomic rearrangements, such as deletions, duplications,
