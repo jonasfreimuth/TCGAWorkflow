@@ -4,4 +4,5 @@
                                 "r-magick"
                                 "r-edger"
                                 "r-viridislite"
-                                "r-grimport2"))
+                                "r-grimport2"
+                                "r-sesamedata"))

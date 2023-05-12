@@ -551,3 +551,84 @@ Beneath and more.  Other features include clustering, dendrograms and
 integration with ggplot2 generated grid objects.  This package is particularly
 designed for bioinformaticians to assemble complex plots for publication.")
     (license gpl3)))
+
+(define-public r-sesamedata
+  (package
+    (name "r-sesamedata")
+    (version "1.18.0")
+    (source (origin
+              (method url-fetch)
+              (uri (bioconductor-uri "sesameData" version
+                                     'experiment))
+              (sha256
+               (base32
+                "1fvxs5n6bj2j0k3vgnaiksshkaxw7fmx6k22rjd3fsqg3cz60fm6"))))
+    (properties `((upstream-name . "sesameData")))
+    (build-system r-build-system)
+    (propagated-inputs (list (specification->package "r-annotationhub")
+                             (specification->package "r-experimenthub")
+                             (specification->package "r-genomeinfodb")
+                             (specification->package "r-genomicranges")
+                             (specification->package "r-iranges")
+                             (specification->package "r-readr")
+                             (specification->package "r-s4vectors")
+                             (specification->package "r-stringr")))
+    (native-inputs (list (specification->package "r-knitr")))
+    (home-page "https://bioconductor.org/packages/sesameData")
+    (synopsis "Supporting Data for SeSAMe Package")
+    (description
+     "This package provides supporting annotation and test data for SeSAMe package.
+This includes chip tango addresses, mapping information, performance annotation,
+and trained predictor for Infinium array data.  This package provides user
+access to essential annotation data for working with many generations of the
+Infinium DNA methylation array.  Current we support human array (HM27, HM450,
+EPIC), mouse array (MM285) and the HorvathMethylChip40 (Mammal40) array.")
+    (license artistic2.0)))
+
+(define-public r-sesame
+  (let ((commit "c0c558ee85fde66640d8a309b497ac685f99c073")
+        (revision "1"))
+    (package
+      (name "r-sesame")
+      (version (git-version "1.19.3" revision commit))
+      (source (origin
+                (method git-fetch)
+                (uri (git-reference
+                      (url "https://github.com/zwdzwd/sesame")
+                      (commit commit)))
+                (file-name (git-file-name name version))
+                (sha256
+                 (base32
+                  "13yv4h9wbzx382bkxjldadglks20hd5ig0jc7yrm8mayl6r3p438"))))
+      (properties `((upstream-name . "sesame")))
+      (build-system r-build-system)
+      (propagated-inputs (list (specification->package "r-biocfilecache")
+                               (specification->package "r-biocparallel")
+                               (specification->package "r-dplyr")
+                               (specification->package "r-genomeinfodb")
+                               (specification->package "r-genomicranges")
+                               (specification->package "r-ggplot2")
+                               (specification->package "r-illuminaio")
+                               (specification->package "r-iranges")
+                               (specification->package "r-mass")
+                               (specification->package "r-preprocesscore")
+                               (specification->package "r-readr")
+                               (specification->package "r-reshape2")
+                               (specification->package "r-s4vectors")
+                               (specification->package "r-sesamedata")
+                               (specification->package "r-stringr")
+                               (specification->package
+                                "r-summarizedexperiment")
+                               (specification->package "r-tibble")
+                               (specification->package "r-wheatmap")))
+      (native-inputs (list (specification->package "r-knitr")))
+      (home-page "https://github.com/zwdzwd/sesame")
+      (synopsis "SEnsible Step-wise Analysis of DNA MEthylation BeadChips")
+      (description
+       "Tools For analyzing Illumina Infinium DNA methylation arrays.  SeSAMe provides
+utilities to support analyses of multiple generations of Infinium DNA
+methylation BeadChips, including preprocessing, quality control, visualization
+and inference.  SeSAMe features accurate detection calling, intelligent
+inference of ethnicity, sex and advanced quality control routines.")
+      (license expat))))
+
