@@ -5,4 +5,5 @@
                                 "r-edger"
                                 "r-viridislite"
                                 "r-grimport2"
+                                "r-cairo"
                                 "r-sesamedata"))
