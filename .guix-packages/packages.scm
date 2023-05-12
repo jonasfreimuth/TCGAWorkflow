@@ -527,4 +527,27 @@ high-grade glioma (glioblastoma multiform or GBM).")
 MAT files.  For user with MATLAB v6 or newer installed (either locally or on a
 remote host), the package also provides methods for controlling MATLAB
 (trademark) via R and sending and retrieving data between R and MATLAB.")
-      (license lgpl2.1+))))
+      (license lgpl2.1+))))(define-public r-wheatmap
+  (package
+    (name "r-wheatmap")
+    (version "0.2.0")
+    (source (origin
+              (method url-fetch)
+              (uri (cran-uri "wheatmap" version))
+              (sha256
+               (base32
+                "064idlrnb85xxav39gp3n854fic6514khvazrf5d0x48crpzyvdp"))))
+    (properties `((upstream-name . "wheatmap")))
+    (build-system r-build-system)
+    (propagated-inputs (list (specification->package "r-colorspace")
+                             (specification->package "r-rcolorbrewer")))
+    (native-inputs (list (specification->package "r-knitr")))
+    (home-page "https://github.com/zwdzwd/wheatmap")
+    (synopsis "Incrementally Build Complex Plots using Natural Semantics")
+    (description
+     "Builds complex plots, heatmaps in particular, using natural semantics.  Bigger
+plots can be assembled using directives such as LeftOf', RightOf', TopOf', and
+Beneath and more.  Other features include clustering, dendrograms and
+integration with ggplot2 generated grid objects.  This package is particularly
+designed for bioinformaticians to assemble complex plots for publication.")
+    (license gpl3)))
